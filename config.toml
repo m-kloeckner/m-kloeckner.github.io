@@ -3,7 +3,7 @@ baseURL = 'https://m-kloeckner.github.io/'
 defaultContentLanguage = "en"
 #title = 'My New Hugo Site'
 theme = "hallo"
-publishDir = "docs"
+publishDir = "public"
 
 [Author]
     name = "Martin Klöckner"
