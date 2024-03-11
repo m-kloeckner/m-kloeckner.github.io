@@ -1,5 +1,6 @@
 baseURL = 'https://m-kloeckner.github.io/'
 languageCode = 'en-us'
+defaultContentLanguage = "en"
 title = 'My New Hugo Site'
 theme = "hallo"
 publishDir = "docs"
@@ -24,3 +25,27 @@ publishDir = "docs"
         icon = "instagram"
         title = "Instagram"
         url = "https://www.instagram.com/mkloeckner"
+
+
+defaultContentLanguageInSubdir = true
+[languages]
+  [languages.de]
+    contentDir = 'content/de'
+    disabled = false
+    languageCode = 'de-DE'
+    languageDirection = 'ltr'
+    languageName = 'Deutsch'
+    title = 'Projekt Dokumentation'
+    weight = 1
+    [languages.de.params]
+      subtitle = 'Referenz, Tutorials und Erklärungen'
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Project Documentation'
+    weight = 2
+    [languages.en.params]
+      subtitle = 'Reference, Tutorials, and Explanations'
