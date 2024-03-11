@@ -1,7 +1,7 @@
 baseURL = 'https://m-kloeckner.github.io/'
-languageCode = 'en-us'
+#languageCode = 'en-us'
 defaultContentLanguage = "en"
-title = 'My New Hugo Site'
+#title = 'My New Hugo Site'
 theme = "hallo"
 publishDir = "docs"
 
@@ -25,7 +25,10 @@ publishDir = "docs"
         icon = "instagram"
         title = "Instagram"
         url = "https://www.instagram.com/mkloeckner"
-
+    [params.colors]
+        background = "#99acc9"
+        foreground = "#edf7ff"
+        hover = "#798291"
 
 defaultContentLanguageInSubdir = true
 [languages]
@@ -35,17 +38,17 @@ defaultContentLanguageInSubdir = true
     languageCode = 'de-DE'
     languageDirection = 'ltr'
     languageName = 'Deutsch'
-    title = 'Projekt Dokumentation'
+    title = 'Home | Martin Klöckner'
     weight = 1
     [languages.de.params]
-      subtitle = 'Referenz, Tutorials und Erklärungen'
+      subtitle = 'IT Sicherheits-Experte, Blog'
   [languages.en]
     contentDir = 'content/en'
     disabled = false
     languageCode = 'en-US'
     languageDirection = 'ltr'
     languageName = 'English'
-    title = 'Project Documentation'
+    title = 'Home | Martin Klöckner'
     weight = 2
     [languages.en.params]
-      subtitle = 'Reference, Tutorials, and Explanations'
+      subtitle = 'Cyber Security Expert, Blog'
