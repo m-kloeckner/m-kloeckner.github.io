@@ -1,5 +1,4 @@
 {{ define "main" }}
-
 <main>
     <div class="block introduction">
         <div class="column left">
@@ -12,7 +11,13 @@
                 <h1>{{ i18n "hello" }}.</h1>
             {{- end -}}
             <h2>{{ i18n "i-am" }} {{ .Site.Author.name | default "Hallo" }}.</h2>
-            <p>{{- partial "introduction.html" . -}}</p>
+            <p>
+            {{ if eq .Site.Language.Lang "de" }}
+                {{- partial "introduction.de.html" . -}}
+            {{ else }}
+                {{- partial "introduction.en.html" . -}}
+            {{ end }}
+            </p>
 
             <div class="links">
                 {{- range .Site.Params.links -}}
